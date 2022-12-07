@@ -1,0 +1,187 @@
+/* body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
+
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #EEEEEE;
+  --dark-blue: #6F38C5;
+  --navy-blue: #87A2FB;
+  --light-green: #ADDDD0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+h6,
+h5,
+h4,
+h3,
+h2,
+h1,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  background-color: var(--navy-blue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  padding: 1rem;
+  min-height: 100vh;
+}
+
+main>.card {
+  background-color: var(--gray);
+  width: 95vw;
+  max-width: 500px;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.search>form>button {
+  width: 5rem;
+  cursor: pointer;
+  background-color: var(--dark-blue);
+  color: var(--white);
+  outline: none;
+  transition: all 0.6s ease;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: 3px solid var(--navy-blue);
+  border-radius: 5px;
+}
+
+.search>form>button:hover {
+  background-color: var(--navy-blue);
+  color: var(--white);
+
+}
+
+.search>form>input {
+  margin-right: 1rem;
+  margin-top: 1rem;
+  width: calc(100% - 6rem);
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+}
+
+.search>form>input:focus {
+  outline-color: var(--navy-blue);
+}
+
+.detail>img {
+  width: 10rem;
+  border-radius: 50%;
+  margin: 0.5rem;
+  outline: 2px solid var(--dark-blue);
+  outline-offset: 5px;
+}
+
+.detail .detail-right {
+  /* border: 2px solid red; */
+  display: inline-block;
+  vertical-align: top;
+  margin: 2rem 0.5rem 0rem;
+  padding: 0.7rem;
+  line-height: 2.5rem;
+}
+
+.detail .buttons {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  /* padding: 0.5rem ; */
+  margin-top: 0.5rem ;
+  gap: 0.5rem;
+}
+
+.detail .buttons button {
+  border: none;
+  width: 10rem;
+  /* background-color: transparent; */
+  padding: 1rem 0rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: all 0.7s linear;
+  
+}
+.detail .buttons button:hover {
+
+  background-color: var(--navy-blue);
+  color: var(--white);
+}
+.detail .buttons button span {
+display: block;
+line-height: 2rem;
+font-weight: bold;
+  
+}
+
+.incorrect{
+  color: red;
+}
+.incorrect-input{
+  border: 2px solid red !important;
+  outline-color: red !important;
+}
+.active{
+  background-color: var(--navy-blue);
+  color: var(--white);
+}
+.load-more{
+  margin-top: -2rem;
+ 
+}
+.load-more button{
+  float:right;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-weight: bold;
+}
+
+.footer{
+  text-align: center;
+  margin-top: 0.5rem;
+}
+.repo-description{
+  font-size: 0.8rem;
+}
+.repo-date{
+  font-size: 0.7rem;
+}
+.follower-avatar-container{
+    margin: 0 5rem;
+    border-radius: 50%;
+    padding:0.5rem;
+}
+.follower-avatar{
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  outline: 1px solid var(--dark-blue);
+  outline-offset: 3px;
+}
